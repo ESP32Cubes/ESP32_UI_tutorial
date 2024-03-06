@@ -46,8 +46,9 @@ void lv_port_indev_init(void)
     indev_drv.read_cb = encoder_read;
     indev_encoder = lv_indev_drv_register(&indev_drv);
 
-    /* 创建group */
+    /* Create input device group */
     group = lv_group_create();
+    lv_group_set_default(group);
     lv_indev_set_group(indev_encoder, group);
 }
 
