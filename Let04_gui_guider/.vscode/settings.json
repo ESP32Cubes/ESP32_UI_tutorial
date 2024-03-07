@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "lv_examples.h": "c",
+        "lv_demo_music_main.h": "c",
+        "lv_disp.h": "c",
+        "lv_port_disp_template.h": "c",
+        "lvgl.h": "c",
+        "gui_guider.h": "c",
+        "events_init.h": "c"
+    }
+}
