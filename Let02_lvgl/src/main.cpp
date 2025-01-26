@@ -42,6 +42,7 @@ void setup()
 
   tft.init();
   tft.setRotation(3);
+<<<<<<< Updated upstream
 
   lv_disp_draw_buf_init(&draw_buf, buf, NULL, screenWidth * screenHeight / 10);
 
@@ -70,4 +71,16 @@ void loop()
     lv_timer_handler(); // Call lvgl's timer handler
     lv_tick_inc(5);     // Update lvgl's tick
   }
+=======
+
+  tft.fillScreen(TFT_BLUE);
+  tft.setCursor(50, 50, 4);
+  tft.setTextColor(TFT_WHITE);
+  tft.println("Hello ESP32Cube!");
+  delay(2000);
+>>>>>>> Stashed changes
+}
+
+void loop()
+{
 }
